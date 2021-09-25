@@ -555,3 +555,17 @@ html {
     transform: scale(1.03);
     cursor: pointer;
 }
+
+@media screen and (max-width: 900px) {
+    .contenedorMain {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedorMain img {
+        width: 100%;
+    }
+    .contenedorMain .contenedorTextosMain {
+        width: 100%;
+    }
+}
