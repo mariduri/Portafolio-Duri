@@ -556,7 +556,7 @@ html {
     cursor: pointer;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
     .contenedorMain {
         flex-direction: column-reverse;
         justify-content: center;
