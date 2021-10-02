@@ -6,20 +6,25 @@
 
 @font-face {
     font-family: "miFuente";
-    src: url(../fuente/Sunday\ Morning4.otf);
+    src: url(../fuente/Sunday_Morning4.otf);
 }
 
 html {
     scroll-behavior: smooth;
+    font-size: 62.5%;
 }
 
 
-/* Estilos del header */
+/* ---------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------- */
+
+
+/* ESTILOS HEADER Y NAV */
 
 .header {
     background-image: url(../img/banner.png);
     width: 100%;
-    height: 600px;
+    height: 60rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -28,45 +33,36 @@ html {
     overflow: hidden;
 }
 
-.div-logo-nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-.div-logo-nav img {
-    width: 245px;
-    height: 132;
-    padding: 10px 24px;
+.navbar-brand img {
+    width: 24.5rem;
+    height: auto;
+    padding: 1rem 2.4rem;
     display: flex;
     justify-content: flex-start;
 }
 
-.navHeader ul {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end
+.bg-light {
+    background: none !important;
 }
 
-.navHeader li a {
-    display: block;
-    padding: 46px 20px;
-    text-decoration: none;
-    color: #6B6B6B;
+.nav-link {
+    font-family: 'Montserrat', sans-serif!important;
+    color: #707070!important;
+    font-size: 1.4rem!important;
+    font-weight: 500!important;
     text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.098);
+    padding: 1.5rem!important;
 }
 
 .textosHeader {
     text-align: center;
-    margin-top: 60px;
-    margin-bottom: 32px;
+    margin-top: 6rem;
+    margin-bottom: 3.2rem;
 }
 
 .textosHeader h1 {
     font-family: "miFuente";
-    font-size: 160px;
+    font-size: 16rem;
     -webkit-text-fill-color: #fff;
     -webkit-text-stroke: 1px;
 }
@@ -74,6 +70,8 @@ html {
 .textosHeader ul {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    font-size: 1.5rem;
+    color: #707070;
     list-style: none;
     display: flex;
     text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.098);
@@ -81,12 +79,12 @@ html {
 }
 
 .textosHeader li {
-    padding: 24px;
+    padding: 2.4rem;
 }
 
 .textosHeader a img {
-    height: 24px;
-    width: 24px;
+    height: 2.4rem;
+    width: 2.4rem;
 }
 
 .wave {
@@ -97,44 +95,52 @@ html {
 }
 
 
-/* Estilos del header de Proyectos personales */
+/* --------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------- */
+
+
+/* ESTILOS HEADER PROYECTOS PERSONALES */
 
 .textosHeader2 {
     text-align: center;
     margin-top: 0px;
-    margin-bottom: 32px;
+    margin-bottom: 3.2rem;
 }
 
 .textosHeader2 h1 {
     font-family: "miFuente";
-    font-size: 150px;
+    font-size: 14.5rem;
     -webkit-text-fill-color: #fff;
     -webkit-text-stroke: 1px;
 }
 
 
-/* Estilos main del index */
+/* -------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------- */
+
+
+/* ESTILOS MAIN INDEX */
 
 .contenedorMain {
     width: 95%;
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    margin: 2rem;
 }
 
 .contenedorMain img {
     width: 40%;
-    padding: 10px;
+    padding: 1rem;
 }
 
 .contenedorTextosMain {
     width: 48%;
-    padding: 10px;
+    padding: 1rem;
 }
 
 .contenedorTextosMain h2 {
     font-family: "miFuente";
-    font-size: 80px;
+    font-size: 8rem;
     -webkit-text-fill-color: #fff;
     -webkit-text-stroke: 1px;
     text-align: center;
@@ -143,17 +149,21 @@ html {
 .contenedorTextosMain p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1.6rem;
     display: flex;
     color: #535353;
     text-align: center;
 }
 
 
-/*Estilos form contacto */
+/* ---------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------- */
+
+
+/*ESTILOS FORMULARIO DE CONTACTO*/
 
 .contenedorForm {
-    padding: 60px 20px;
+    padding: 6rem 2rem;
 }
 
 .form {
@@ -163,10 +173,10 @@ html {
 
 .contenedorForm h3 {
     font-family: "miFuente";
-    font-size: 40px;
+    font-size: 4rem;
     color: #000;
     text-align: center;
-    padding-bottom: 24px;
+    padding-bottom: 2.4rem;
 }
 
 
@@ -176,46 +186,46 @@ html {
     width: 100%;
     height: 40px;
     background: #fff;
-    border: 1px solid #707070;
-    border-radius: 16px;
+    border: 0.1rem solid #707070;
+    border-radius: 1.6rem;
 }
 
 .inputName::placeholder {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #6B6B6B;
     text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.098);
-    padding: 8px 16px;
+    padding: 0.8rem 1.6rem;
 }
 
 .inputText {
     width: 100%;
-    height: 120px;
+    height: 12rem;
     background: #fff;
-    border: 1px solid #707070;
-    border-radius: 16px;
-    margin-top: 16px;
+    border: 0.1rem solid #707070;
+    border-radius: 1.6rem;
+    margin-top: 1.6rem;
     display: block;
 }
 
 .inputText::placeholder {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #6B6B6B;
     text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.098);
-    padding: 8px 16px;
+    padding: 0.8rem 1.6rem;
 }
 
 .inputBoton {
-    width: 128px;
-    height: 48px;
-    border-radius: 8px;
+    width: 12.8rem;
+    height: 4.8rem;
+    border-radius: 0.8rem;
     background: linear-gradient(#C5D5EB, #c5ddff);
     border-color: transparent;
     display: block;
-    margin-top: 24px;
+    margin-top: 2.4rem;
     margin-left: auto;
     margin-right: auto;
     transform: scale(1);
@@ -228,93 +238,17 @@ html {
 }
 
 
-/*Footer*/
-
-.footer {
-    background-color: #DAE2F1;
-    width: 100%;
-    height: 160px;
-    color: #707070;
-    display: flex;
-    margin: auto;
-}
-
-.footerLeft {
-    margin: 24px;
-    text-align: center;
-}
-
-.footerLeft h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-    color: #707070;
-    padding-top: 24px;
-}
-
-.footerLeft p {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    color: #707070;
-    margin-top: 20px;
-}
-
-.footerCenter {
-    margin-top: 32px;
-    margin-left: auto;
-    width: 300px;
-    margin-right: auto;
-}
-
-.footerCenter ul {
-    list-style: none;
-    display: flex;
-}
-
-.footerCenter li {
-    padding: 24px;
-}
-
-.footerCenter li a img {
-    width: 48px;
-    height: 48px;
-}
-
-.footerRight {
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(2, 75px);
-    width: 200px;
-    justify-content: end
-}
-
-.footerRight ul {
-    list-style: none;
-}
-
-.footerRight li {
-    padding-bottom: 8px;
-}
-
-.footerRight li a {
-    display: block;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    text-decoration: none;
-    color: #6B6B6B;
-    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.098);
-}
+/* -----------------------------------------------------------------------------
+------------------------------------------------------------------------------- */
 
 
-/* Estilos main CV */
+/* ESTILOS MAIN CV */
 
 .tituloCv {
     font-family: "miFuente";
-    font-size: 40px;
+    font-size: 4rem;
     color: #000;
-    height: 50px;
+    height: 5rem;
 }
 
 .contenedor-cv ul {
@@ -324,7 +258,7 @@ html {
 .contenedor-cv li {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 2rem;
     text-decoration: none;
     color: #707070;
 }
@@ -332,7 +266,7 @@ html {
 .contenedor-cv p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 2rem;
     text-decoration: none;
     color: #707070;
 }
@@ -340,7 +274,7 @@ html {
 .contenedor-cv .numeros {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 2rem;
     text-decoration: none;
     color: #707070;
 }
@@ -350,7 +284,7 @@ html {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6);
     grid-template-areas: ". tituloedu tituloidioma" "foto edu idioma" "tituloinfo tituloexp titulohab" "info exp hab" ". titulosoftware ." ". soft .";
-    padding: 40px;
+    padding: 4rem;
 }
 
 .text-span {
@@ -370,7 +304,7 @@ html {
 }
 
 .col1-row2 img {
-    height: 300px;
+    height: 30rem;
     width: auto;
     border-radius: 15%;
 }
@@ -421,7 +355,7 @@ html {
 }
 
 .col3-row4 img {
-    height: 100px;
+    height: 10rem;
     width: auto;
 }
 
@@ -440,18 +374,22 @@ html {
 }
 
 .col2-row6 img {
-    height: 60px;
+    height: 6rem;
     width: auto;
 }
 
 
-/* Estilos Servicios */
+/*---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------*/
+
+
+/* ESTILOS SERVICIOS */
 
 .card h3 {
     font-family: "miFuente";
-    font-size: 32px;
+    font-size: 3.2rem;
     color: #000;
-    padding-bottom: 16px;
+    padding-bottom: 1.6rem;
 }
 
 .card ul {
@@ -461,19 +399,19 @@ html {
 .card li {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1.6rem;
     text-decoration: none;
     color: #707070;
-    padding-bottom: 10px;
+    padding-bottom: 1rem;
 }
 
 .contenedorCards {
-    padding: 20px;
+    padding: 2rem;
 }
 
 .div-cards {
     margin: auto;
-    padding-bottom: 60px;
+    padding-bottom: 6rem;
     display: flex;
     width: 100%;
     justify-content: space-evenly;
@@ -482,7 +420,7 @@ html {
 .card {
     width: 22%;
     text-align: center;
-    height: 350px;
+    height: 35rem;
     box-shadow: 0 0 3px 0 rgb(0 0 0 / 50%);
     transform: scale(1);
     transition: transform 0.6s;
@@ -496,30 +434,34 @@ html {
 }
 
 .card img {
-    margin: 30px 0 10px 0;
-    height: 120px;
+    margin: 3rem 0 1rem 0;
+    height: 12rem;
     width: auto;
 }
 
 
-/* Estilos proyectos-trabajos */
+/* ------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------- */
+
+
+/* ESTILOS PROYECTOS PERSONALES-TRABAJO FREELANCE */
 
 .contenedor-galeria h3 {
     font-family: "miFuente";
-    font-size: 32px;
+    font-size: 3.2rem;
     color: #000;
-    padding-left: 40px;
+    padding-left: 4rem;
 }
 
 .galeria1,
 .galeria2,
 .galeria3 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     width: 95%;
     margin: auto;
-    grid-gap: 10px;
-    padding: 24px 0;
+    grid-gap: 1rem;
+    padding: 2.4rem 0;
     overflow: hidden;
 }
 
@@ -535,7 +477,7 @@ html {
 .galeria2 img {
     width: 100%;
     vertical-align: top;
-    height: 350px;
+    height: 35rem;
     object-fit: cover;
     transform: scale(1);
     transition: transform 0.6s;
@@ -544,7 +486,7 @@ html {
 .galeria3 img {
     width: 100%;
     vertical-align: top;
-    height: 350px;
+    height: 35rem;
     object-fit: cover;
     transform: scale(1);
     transition: transform 0.6s;
@@ -556,7 +498,46 @@ html {
     cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+
+/* -------------------------------------------------------------------------
+---------------------------------------------------------------------------- */
+
+
+/* ESTILOS FOOTER */
+
+footer {
+    background-color: #DAE2F1!important;
+}
+
+footer .text-white {
+    font-family: 'Montserrat', sans-serif!important;
+    color: #707070!important;
+    font-size: 1rem!important;
+}
+
+.copy {
+    background-color: #c5ddff;
+}
+
+.copy p {
+    font-family: 'Montserrat', sans-serif;
+    color: #707070;
+}
+
+.icon {
+    font-family: 'Montserrat', sans-serif!important;
+    color: #707070!important;
+    font-size: 3rem!important;
+}
+
+
+/* --------------------------------------------------------------------------
+---------------------------------------------------------------------------- */
+
+
+/* MEDIA Q */
+
+@media screen and (max-width: 991px) {
     .contenedorMain {
         flex-direction: column-reverse;
         justify-content: center;
@@ -567,5 +548,59 @@ html {
     }
     .contenedorMain .contenedorTextosMain {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .textosHeader h1 {
+        font-size: 14rem;
+        text-align: center;
+    }
+    .navbar-brand img {
+        width: 17rem;
+        height: auto;
+    }
+    .contenedorMain {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedorMain img {
+        width: 100%;
+    }
+    .contenedorMain .contenedorTextosMain {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header {
+        height: 50rem;
+        width: 100%;
+    }
+    .textosHeader h1 {
+        font-size: 10rem;
+        text-align: center;
+    }
+    .textosHeader ul {
+        display: block;
+        font-size: 1.7rem;
+    }
+    .textosHeader ul li {
+        padding: 0
+    }
+    .contenedorMain {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedorMain img {
+        width: 100%;
+    }
+    .contenedorMain .contenedorTextosMain {
+        width: 100%;
+    }
+    .input {
+        padding-bottom: 1rem;
     }
 }
