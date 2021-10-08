@@ -138,9 +138,9 @@
                                 font-family: 'Montserrat', sans-serif;
                                 font-weight: 500;
                                 font-size: 1.6rem;
-                                display: flex;
                                 color: #535353;
                                 text-align: center;
+                                display: block;
                             }
                             /* ---------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------- */
@@ -259,118 +259,116 @@
                             
                             .contenedor-cv {
                                 display: grid;
-                                grid-template-columns: repeat(3, 1fr);
-                                grid-template-rows: repeat(6);
-                                grid-template-areas: ". tituloedu tituloidioma" "foto edu idioma" "tituloinfo tituloexp titulohab" "info exp hab" ". titulosoftware ." ". soft .";
+                                grid-template-columns: 1fr 2fr 1fr;
                                 padding: 4rem;
+                                margin: auto;
+                                grid-column-gap: 4rem;
                             }
                             
-                            .text-span {
-                                display: block;
-                            }
-                            
-                            .col1-row2 {
-                                grid-area: foto;
-                            }
-                            
-                            .col1-row3 {
-                                grid-area: tituloinfo;
-                            }
-                            
-                            .col1-row4 {
-                                grid-area: info;
-                            }
-                            
-                            .col1-row2 img {
-                                height: 30rem;
-                                width: auto;
+                            .row1 img {
+                                width: 30rem;
+                                height: auto;
                                 border-radius: 15%;
+                                margin: auto;
                             }
                             
-                            .col2-row1 {
-                                grid-area: tituloedu;
-                            }
-                            
-                            .col2-row2 {
-                                display: grid;
-                                grid-area: edu;
-                                grid-template-columns: repeat(2, 1fr);
-                            }
-                            
-                            .col2-row3 {
-                                grid-area: tituloexp;
-                            }
-                            
-                            .col2-row4 {
-                                grid-area: exp;
-                                display: grid;
-                                grid-template-columns: repeat(2, 1fr);
-                            }
-                            
-                            .col3-row1 {
-                                grid-area: tituloidioma;
-                            }
-                            
-                            .col3-row2 {
-                                display: grid;
-                                grid-area: idioma;
-                                grid-template-columns: repeat(2, 1fr);
-                            }
-                            
-                            .col3-row3 {
-                                grid-area: titulohab;
-                            }
-                            
-                            .col3-row4 {
-                                grid-area: hab;
-                            }
-                            
-                            .col3-row4 ul {
-                                list-style: none;
-                                display: grid;
-                                grid-template-columns: repeat(2, 1fr);
-                                grid-template-rows: repeat(3. 1fr);
-                            }
-                            
-                            .col3-row4 img {
-                                height: 10rem;
-                                width: auto;
-                            }
-                            
-                            .col2-row5 {
-                                grid-area: titulosoftware;
-                            }
-                            
-                            .col2-row6 {
-                                grid-area: soft;
-                            }
-                            
-                            .col2-row6 ul {
+                            .row4 ul {
                                 list-style: none;
                                 display: flex;
-                                justify-content: space-between;
                             }
                             
-                            .col2-row6 img {
-                                height: 6rem;
-                                width: auto;
+                            .row4 img {
+                                width: 6rem;
+                                height: auto;
+                            }
+                            
+                            .col3 .row1 li {
+                                width: 14rem;
+                            }
+                            
+                            .col3 .row1 ul {
+                                list-style: none;
+                                display: grid;
+                                grid-template-rows: 1fr 0.2fr 1fr 0.2fr;
+                                grid-template-areas: "A B" "a b" "C D" "c d" "E F" "e f";
+                            }
+                            
+                            .A {
+                                grid-area: A;
+                            }
+                            
+                            .a {
+                                grid-area: a;
+                                text-align: center;
+                            }
+                            
+                            .B {
+                                grid-area: B;
+                            }
+                            
+                            .b {
+                                grid-area: b;
+                                text-align: center;
+                            }
+                            
+                            .C {
+                                grid-area: C;
+                            }
+                            
+                            .c {
+                                grid-area: c;
+                                text-align: center;
+                            }
+                            
+                            .D {
+                                grid-area: D;
+                            }
+                            
+                            .d {
+                                grid-area: d;
+                                text-align: center;
+                            }
+                            
+                            .E {
+                                grid-area: E;
+                            }
+                            
+                            .e {
+                                grid-area: e;
+                                text-align: center;
+                            }
+                            
+                            .F {
+                                grid-area: F;
+                            }
+                            
+                            .f {
+                                grid-area: f;
+                                text-align: center;
+                            }
+                            
+                            .col3 .row1 img {
+                                width: 100%;
+                                height: auto;
+                                margin: auto;
+                                align-items: center;
                             }
                             /*---------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------*/
                             /* ESTILOS SERVICIOS */
                             
-                            .card h3 {
+                            .contenido h3 {
                                 font-family: "miFuente";
                                 font-size: 3.2rem;
                                 color: #000;
                                 padding-bottom: 1.6rem;
                             }
                             
-                            .card ul {
+                            .contenido ul {
                                 list-style: none;
                             }
                             
-                            .card li {
+                            .contenido li {
                                 font-family: 'Montserrat', sans-serif;
                                 font-weight: 500;
                                 font-size: 1.6rem;
@@ -379,38 +377,43 @@
                                 padding-bottom: 1rem;
                             }
                             
-                            .contenedorCards {
-                                padding: 2rem;
-                            }
-                            
-                            .div-cards {
-                                margin: auto;
-                                padding-bottom: 6rem;
-                                display: flex;
-                                width: 100%;
-                                justify-content: space-evenly;
-                            }
-                            
-                            .card {
-                                width: 22%;
+                            .cards {
+                                max-width: 110rem;
+                                margin: 0 auto;
                                 text-align: center;
-                                height: 35rem;
-                                box-shadow: 0 0 3px 0 rgb(0 0 0 / 50%);
-                                transform: scale(1);
-                                transition: transform 0.6s;
-                                border-radius: 10%;
+                                padding: 3rem;
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: center;
                             }
                             
-                            .card:hover {
+                            .servicio {
+                                width: 33%;
+                            }
+                            
+                            .contenido {
+                                margin: 2rem;
+                                padding: 2rem;
+                                border-radius: 10%;
+                                border: 1px solid #535353;
+                                transition: all .3s ease;
+                                height: 90%;
+                            }
+                            
+                            .contenido>* {
+                                flex: 1 1 100%;
+                            }
+                            
+                            .contenido:hover {
                                 box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
                                 transform: scale(1.03);
                                 cursor: pointer;
                             }
                             
-                            .card img {
-                                margin: 3rem 0 1rem 0;
+                            .contenido img {
+                                margin: auto;
                                 height: 12rem;
-                                width: auto;
+                                width: 12rem;
                             }
                             /* ------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------- */
@@ -421,45 +424,6 @@
                                 font-size: 3.2rem;
                                 color: #000;
                                 padding-left: 4rem;
-                            }
-                            
-                            .galeria1,
-                            .galeria2,
-                            .galeria3 {
-                                display: grid;
-                                grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-                                width: 95%;
-                                margin: auto;
-                                grid-gap: 1rem;
-                                padding: 2.4rem 0;
-                                overflow: hidden;
-                            }
-                            
-                            .galeria1 img {
-                                width: 100%;
-                                vertical-align: top;
-                                height: auto;
-                                object-fit: cover;
-                                transform: scale(1);
-                                transition: transform 0.6s;
-                            }
-                            
-                            .galeria2 img {
-                                width: 100%;
-                                vertical-align: top;
-                                height: 35rem;
-                                object-fit: cover;
-                                transform: scale(1);
-                                transition: transform 0.6s;
-                            }
-                            
-                            .galeria3 img {
-                                width: 100%;
-                                vertical-align: top;
-                                height: 35rem;
-                                object-fit: cover;
-                                transform: scale(1);
-                                transition: transform 0.6s;
                             }
                             
                             .contenedor-galeria img:hover {
@@ -510,11 +474,16 @@
                                 }
                                 .contenedorMain .contenedorTextosMain {
                                     width: 100%;
+                                    text-align: center;
                                 }
                             }
                             
                             @media screen and (max-width: 768px) {
                                 .textosHeader h1 {
+                                    font-size: 14rem;
+                                    text-align: center;
+                                }
+                                .textosHeader2 h1 {
                                     font-size: 14rem;
                                     text-align: center;
                                 }
@@ -532,6 +501,15 @@
                                 }
                                 .contenedorMain .contenedorTextosMain {
                                     width: 100%;
+                                    text-align: center;
+                                }
+                                .cards {
+                                    display: flex;
+                                    flex-direction: column;
+                                }
+                                .servicio {
+                                    width: 50%;
+                                    margin: auto;
                                 }
                             }
                             
@@ -541,6 +519,10 @@
                                     width: 100%;
                                 }
                                 .textosHeader h1 {
+                                    font-size: 10rem;
+                                    text-align: center;
+                                }
+                                .textosHeader2 h1 {
                                     font-size: 10rem;
                                     text-align: center;
                                 }
@@ -561,6 +543,7 @@
                                 }
                                 .contenedorMain .contenedorTextosMain {
                                     width: 100%;
+                                    text-align: center;
                                 }
                                 .input {
                                     padding-bottom: 1rem;
@@ -576,6 +559,10 @@
                                     font-size: 7rem;
                                     text-align: center;
                                 }
+                                .textosHeader2 h1 {
+                                    font-size: 7rem;
+                                    text-align: center;
+                                }
                                 .contenedorMain {
                                     width: 90%;
                                     padding: 0;
@@ -588,5 +575,9 @@
                                 .contenedorMain .contenedorTextosMain {
                                     width: 100%;
                                     padding: 0.3rem;
+                                    text-align: center;
+                                }
+                                .contenido {
+                                    width: 100%;
                                 }
                             }
