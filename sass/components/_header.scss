@@ -1,0 +1,70 @@
+.header {
+    background-image: url(../img/banner.png);
+    width: 100%;
+    height: 60rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    .navbar-brand img {
+        width: 24.5rem;
+        height: auto;
+        padding: 1rem 2.4rem;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .bg-light {
+        background: none !important;
+    }
+    .nav-link {
+        font-family: 'Montserrat', sans-serif!important;
+        color: #707070!important;
+        font-size: 1.4rem!important;
+        font-weight: 500!important;
+        text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.098);
+        padding: 1.5rem!important;
+    }
+    .textosHeader2 {
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 3.2rem;
+        h1 {
+            font-family: "miFuente";
+            font-size: 14.5rem;
+            -webkit-text-fill-color: #fff;
+            -webkit-text-stroke: 1px;
+        }
+    }
+    .textosHeader {
+        text-align: center;
+        margin-top: 6rem;
+        margin-bottom: 3.2rem;
+        h1 {
+            font-family: "miFuente";
+            font-size: 16rem;
+            -webkit-text-fill-color: #fff;
+            -webkit-text-stroke: 1px;
+        }
+        ul {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 1.5rem;
+            color: #707070;
+            list-style: none;
+            display: flex;
+            text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.098);
+            justify-content: center;
+            li {
+                padding: 2.4rem;
+            }
+        }
+    }
+    .wave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+}

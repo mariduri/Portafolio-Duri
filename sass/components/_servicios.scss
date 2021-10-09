@@ -1,0 +1,49 @@
+.cards {
+    max-width: 110rem;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .servicio {
+        .contenido {
+            margin: 2rem;
+            padding: 2rem;
+            border-radius: 10%;
+            border: 1px solid #535353;
+            transition: all .3s ease;
+            height: 90%;
+            .contenido>* {
+                flex: 1 1 100%;
+            }
+            h3 {
+                font-family: "miFuente";
+                font-size: 3.2rem;
+                color: #000;
+                padding-bottom: 1.6rem;
+            }
+            ul {
+                list-style: none;
+            }
+            li {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 500;
+                font-size: 1.6rem;
+                text-decoration: none;
+                color: #707070;
+                padding-bottom: 1rem;
+            }
+             :hover {
+                box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+                transform: scale(1.03);
+                cursor: pointer;
+            }
+            img {
+                margin: auto;
+                height: 12rem;
+                width: 12rem;
+            }
+        }
+    }
+}

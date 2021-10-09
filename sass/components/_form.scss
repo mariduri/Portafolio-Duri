@@ -1,0 +1,59 @@
+.contenedorForm {
+    padding: 6rem 2rem;
+    .form {
+        width: 85%;
+        margin: auto;
+        .inputName {
+            width: 100%;
+            height: 40px;
+            background: #fff;
+            border: 0.1rem solid #707070;
+            border-radius: 1.6rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 1.6rem;
+            color: #6B6B6B;
+            text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.098);
+            padding: 0.8rem 1.6rem;
+        }
+        .inputText {
+            width: 100%;
+            height: 12rem;
+            background: #fff;
+            border: 0.1rem solid #707070;
+            border-radius: 1.6rem;
+            margin-top: 1.6rem;
+            display: block;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 1.6rem;
+            color: #6B6B6B;
+            text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.098);
+            padding: 0.8rem 1.6rem;
+        }
+        .inputBoton {
+            width: 12.8rem;
+            height: 4.8rem;
+            border-radius: 0.8rem;
+            background: linear-gradient(#C5D5EB, #c5ddff);
+            border-color: transparent;
+            display: block;
+            margin-top: 2.4rem;
+            margin-left: auto;
+            margin-right: auto;
+            transform: scale(1);
+            transition: 0.3s;
+             :hover {
+                transform: scale(1.05);
+                cursor: pointer;
+            }
+        }
+    }
+    h3 {
+        font-family: "miFuente";
+        font-size: 4rem;
+        color: #000;
+        text-align: center;
+        padding-bottom: 2.4rem;
+    }
+}

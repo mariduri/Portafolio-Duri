@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "miFuente";
+    src: url(../fuente/Sunday_Morning4.otf);
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}

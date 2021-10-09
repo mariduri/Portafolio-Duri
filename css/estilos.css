@@ -1,598 +1,520 @@
-                            * {
-                                margin: 0;
-                                padding: 0;
-                                box-sizing: border-box;
-                            }
-                            
-                            @font-face {
-                                font-family: "miFuente";
-                                src: url(../fuente/Sunday_Morning4.otf);
-                            }
-                            
-                            html {
-                                scroll-behavior: smooth;
-                                font-size: 62.5%;
-                            }
-                            /* ---------------------------------------------------------------------------------
--------------------------------------------------------------------------------------- */
-                            /* ESTILOS HEADER Y NAV */
-                            
-                            .header {
-                                background-image: url(../img/banner.png);
-                                width: 100%;
-                                height: 60rem;
-                                background-repeat: no-repeat;
-                                background-size: cover;
-                                background-position: center;
-                                background-attachment: fixed;
-                                position: relative;
-                                overflow: hidden;
-                            }
-                            
-                            .navbar-brand img {
-                                width: 24.5rem;
-                                height: auto;
-                                padding: 1rem 2.4rem;
-                                display: flex;
-                                justify-content: flex-start;
-                            }
-                            
-                            .bg-light {
-                                background: none !important;
-                            }
-                            
-                            .nav-link {
-                                font-family: 'Montserrat', sans-serif!important;
-                                color: #707070!important;
-                                font-size: 1.4rem!important;
-                                font-weight: 500!important;
-                                text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.098);
-                                padding: 1.5rem!important;
-                            }
-                            
-                            .textosHeader {
-                                text-align: center;
-                                margin-top: 6rem;
-                                margin-bottom: 3.2rem;
-                            }
-                            
-                            .textosHeader h1 {
-                                font-family: "miFuente";
-                                font-size: 16rem;
-                                -webkit-text-fill-color: #fff;
-                                -webkit-text-stroke: 1px;
-                            }
-                            
-                            .textosHeader ul {
-                                font-family: 'Montserrat', sans-serif;
-                                font-weight: 500;
-                                font-size: 1.5rem;
-                                color: #707070;
-                                list-style: none;
-                                display: flex;
-                                text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.098);
-                                justify-content: center;
-                            }
-                            
-                            .textosHeader li {
-                                padding: 2.4rem;
-                            }
-                            
-                            .textosHeader a img {
-                                height: 2.4rem;
-                                width: 2.4rem;
-                            }
-                            
-                            .wave {
-                                position: absolute;
-                                bottom: 0;
-                                left: 0;
-                                width: 100%;
-                            }
-                            /* --------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------- */
-                            /* ESTILOS HEADER PROYECTOS PERSONALES */
-                            
-                            .textosHeader2 {
-                                text-align: center;
-                                margin-top: 0px;
-                                margin-bottom: 3.2rem;
-                            }
-                            
-                            .textosHeader2 h1 {
-                                font-family: "miFuente";
-                                font-size: 14.5rem;
-                                -webkit-text-fill-color: #fff;
-                                -webkit-text-stroke: 1px;
-                            }
-                            /* -------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------- */
-                            /* ESTILOS MAIN INDEX */
-                            
-                            .contenedorMain {
-                                width: 95%;
-                                display: flex;
-                                justify-content: space-between;
-                                margin: 2rem;
-                            }
-                            
-                            .contenedorMain img {
-                                width: 40%;
-                                padding: 1rem;
-                            }
-                            
-                            .contenedorTextosMain {
-                                width: 48%;
-                                padding: 1rem;
-                            }
-                            
-                            .contenedorTextosMain h2 {
-                                font-family: "miFuente";
-                                font-size: 8rem;
-                                -webkit-text-fill-color: #fff;
-                                -webkit-text-stroke: 1px;
-                                text-align: center;
-                            }
-                            
-                            .contenedorTextosMain p {
-                                font-family: 'Montserrat', sans-serif;
-                                font-weight: 500;
-                                font-size: 1.6rem;
-                                color: #535353;
-                                text-align: center;
-                                display: block;
-                            }
-                            /* ---------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------- */
-                            /*ESTILOS FORMULARIO DE CONTACTO*/
-                            
-                            .contenedorForm {
-                                padding: 6rem 2rem;
-                            }
-                            
-                            .form {
-                                width: 85%;
-                                margin: auto;
-                            }
-                            
-                            .contenedorForm h3 {
-                                font-family: "miFuente";
-                                font-size: 4rem;
-                                color: #000;
-                                text-align: center;
-                                padding-bottom: 2.4rem;
-                            }
-                            /* A los input los separe por clases para darles estilos distintos a cada uno, igual que sus placeholder */
-                            
-                            .inputName {
-                                width: 100%;
-                                height: 40px;
-                                background: #fff;
-                                border: 0.1rem solid #707070;
-                                border-radius: 1.6rem;
-                            }
-                            
-                            .inputName::placeholder {
-                                font-family: 'Montserrat', sans-serif;
-                                font-weight: 500;
-                                font-size: 1.6rem;
-                                color: #6B6B6B;
-                                text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.098);
-                                padding: 0.8rem 1.6rem;
-                            }
-                            
-                            .inputText {
-                                width: 100%;
-                                height: 12rem;
-                                background: #fff;
-                                border: 0.1rem solid #707070;
-                                border-radius: 1.6rem;
-                                margin-top: 1.6rem;
-                                display: block;
-                            }
-                            
-                            .inputText::placeholder {
-                                font-family: 'Montserrat', sans-serif;
-                                font-weight: 500;
-                                font-size: 1.6rem;
-                                color: #6B6B6B;
-                                text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.098);
-                                padding: 0.8rem 1.6rem;
-                            }
-                            
-                            .inputBoton {
-                                width: 12.8rem;
-                                height: 4.8rem;
-                                border-radius: 0.8rem;
-                                background: linear-gradient(#C5D5EB, #c5ddff);
-                                border-color: transparent;
-                                display: block;
-                                margin-top: 2.4rem;
-                                margin-left: auto;
-                                margin-right: auto;
-                                transform: scale(1);
-                                transition: 0.3s;
-                            }
-                            
-                            .inputBoton:hover {
-                                transform: scale(1.05);
-                                cursor: pointer;
-                            }
-                            /* -----------------------------------------------------------------------------
-------------------------------------------------------------------------------- */
-                            /* ESTILOS MAIN CV */
-                            
-                            .tituloCv {
-                                font-family: "miFuente";
-                                font-size: 4rem;
-                                color: #000;
-                                height: 5rem;
-                            }
-                            
-                            .contenedor-cv ul {
-                                list-style: none;
-                            }
-                            
-                            .contenedor-cv li {
-                                font-family: 'Montserrat', sans-serif;
-                                font-weight: 500;
-                                font-size: 2rem;
-                                text-decoration: none;
-                                color: #707070;
-                            }
-                            
-                            .contenedor-cv p {
-                                font-family: 'Montserrat', sans-serif;
-                                font-weight: 500;
-                                font-size: 2rem;
-                                text-decoration: none;
-                                color: #707070;
-                            }
-                            
-                            .contenedor-cv .numeros {
-                                font-family: 'Montserrat', sans-serif;
-                                font-weight: 600;
-                                font-size: 2rem;
-                                text-decoration: none;
-                                color: #707070;
-                            }
-                            
-                            .contenedor-cv {
-                                display: grid;
-                                grid-template-columns: 1fr 2fr 1fr;
-                                padding: 4rem;
-                                margin: auto;
-                                grid-column-gap: 4rem;
-                            }
-                            
-                            .row1 img {
-                                width: 30rem;
-                                height: auto;
-                                border-radius: 15%;
-                                margin: auto;
-                            }
-                            
-                            .row4 ul {
-                                list-style: none;
-                                display: flex;
-                            }
-                            
-                            .row4 img {
-                                width: 6rem;
-                                height: auto;
-                            }
-                            
-                            .col3 .row1 li {
-                                width: 14rem;
-                            }
-                            
-                            .col3 .row1 ul {
-                                list-style: none;
-                                display: grid;
-                                grid-template-rows: 1fr 0.2fr 1fr 0.2fr;
-                                grid-template-areas: "A B" "a b" "C D" "c d" "E F" "e f";
-                            }
-                            
-                            .A {
-                                grid-area: A;
-                            }
-                            
-                            .a {
-                                grid-area: a;
-                                text-align: center;
-                            }
-                            
-                            .B {
-                                grid-area: B;
-                            }
-                            
-                            .b {
-                                grid-area: b;
-                                text-align: center;
-                            }
-                            
-                            .C {
-                                grid-area: C;
-                            }
-                            
-                            .c {
-                                grid-area: c;
-                                text-align: center;
-                            }
-                            
-                            .D {
-                                grid-area: D;
-                            }
-                            
-                            .d {
-                                grid-area: d;
-                                text-align: center;
-                            }
-                            
-                            .E {
-                                grid-area: E;
-                            }
-                            
-                            .e {
-                                grid-area: e;
-                                text-align: center;
-                            }
-                            
-                            .F {
-                                grid-area: F;
-                            }
-                            
-                            .f {
-                                grid-area: f;
-                                text-align: center;
-                            }
-                            
-                            .col3 .row1 img {
-                                width: 100%;
-                                height: auto;
-                                margin: auto;
-                                align-items: center;
-                            }
-                            /*---------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------*/
-                            /* ESTILOS SERVICIOS */
-                            
-                            .contenido h3 {
-                                font-family: "miFuente";
-                                font-size: 3.2rem;
-                                color: #000;
-                                padding-bottom: 1.6rem;
-                            }
-                            
-                            .contenido ul {
-                                list-style: none;
-                            }
-                            
-                            .contenido li {
-                                font-family: 'Montserrat', sans-serif;
-                                font-weight: 500;
-                                font-size: 1.6rem;
-                                text-decoration: none;
-                                color: #707070;
-                                padding-bottom: 1rem;
-                            }
-                            
-                            .cards {
-                                max-width: 110rem;
-                                margin: 0 auto;
-                                text-align: center;
-                                padding: 3rem;
-                                display: flex;
-                                flex-wrap: wrap;
-                                justify-content: center;
-                            }
-                            
-                            .servicio {
-                                width: 33%;
-                            }
-                            
-                            .contenido {
-                                margin: 2rem;
-                                padding: 2rem;
-                                border-radius: 10%;
-                                border: 1px solid #535353;
-                                transition: all .3s ease;
-                                height: 90%;
-                            }
-                            
-                            .contenido>* {
-                                flex: 1 1 100%;
-                            }
-                            
-                            .contenido:hover {
-                                box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
-                                transform: scale(1.03);
-                                cursor: pointer;
-                            }
-                            
-                            .contenido img {
-                                margin: auto;
-                                height: 12rem;
-                                width: 12rem;
-                            }
-                            /* ------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------- */
-                            /* ESTILOS PROYECTOS PERSONALES-TRABAJO FREELANCE */
-                            
-                            .contenedor-galeria h3 {
-                                font-family: "miFuente";
-                                font-size: 3.2rem;
-                                color: #000;
-                                padding-left: 4rem;
-                                margin: 1.2rem;
-                            }
-                            
-                            .contenedor-galeria img:hover {
-                                box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
-                                transform: scale(1.03);
-                                cursor: pointer;
-                            }
-                            /* -------------------------------------------------------------------------
----------------------------------------------------------------------------- */
-                            /* ESTILOS FOOTER */
-                            
-                            footer {
-                                background-color: #DAE2F1!important;
-                            }
-                            
-                            footer .text-white {
-                                font-family: 'Montserrat', sans-serif!important;
-                                color: #707070!important;
-                                font-size: 1rem!important;
-                            }
-                            
-                            .copy {
-                                background-color: #c5ddff;
-                            }
-                            
-                            .copy p {
-                                font-family: 'Montserrat', sans-serif;
-                                color: #707070;
-                            }
-                            
-                            .icon {
-                                font-family: 'Montserrat', sans-serif!important;
-                                color: #707070!important;
-                                font-size: 3rem!important;
-                            }
-                            /* --------------------------------------------------------------------------
----------------------------------------------------------------------------- */
-                            /* MEDIA Q */
-                            
-                            @media screen and (max-width: 995px) {
-                                .contenedorMain {
-                                    flex-direction: column-reverse;
-                                    justify-content: center;
-                                    align-items: center;
-                                }
-                                .contenedorMain img {
-                                    width: 100%;
-                                }
-                                .contenedorMain .contenedorTextosMain {
-                                    width: 100%;
-                                    text-align: center;
-                                }
-                            }
-                            
-                            @media screen and (max-width: 768px) {
-                                .textosHeader h1 {
-                                    font-size: 14rem;
-                                    text-align: center;
-                                }
-                                .textosHeader2 h1 {
-                                    font-size: 14rem;
-                                    text-align: center;
-                                }
-                                .navbar-brand img {
-                                    width: 17rem;
-                                    height: auto;
-                                }
-                                .contenedorMain {
-                                    flex-direction: column-reverse;
-                                    justify-content: center;
-                                    align-items: center;
-                                }
-                                .contenedorMain img {
-                                    width: 100%;
-                                }
-                                .contenedorMain .contenedorTextosMain {
-                                    width: 100%;
-                                    text-align: center;
-                                }
-                                .cards {
-                                    display: flex;
-                                    flex-direction: column;
-                                }
-                                .servicio {
-                                    width: 50%;
-                                    margin: auto;
-                                }
-                                .contenedor-cv {
-                                    display: flex;
-                                    flex-direction: column;
-                                    text-align: center;
-                                    align-items: center;
-                                    justify-content: center;
-                                }
-                                .contenedor-cv .col1 ul {
-                                    justify-content: center;
-                                }
-                            }
-                            
-                            @media screen and (max-width: 640px) {
-                                .header {
-                                    height: 50rem;
-                                    width: 100%;
-                                }
-                                .textosHeader h1 {
-                                    font-size: 10rem;
-                                    text-align: center;
-                                }
-                                .textosHeader2 h1 {
-                                    font-size: 10rem;
-                                    text-align: center;
-                                }
-                                .textosHeader ul {
-                                    display: block;
-                                    font-size: 1.7rem;
-                                }
-                                .textosHeader ul li {
-                                    padding: 0
-                                }
-                                .contenedorMain {
-                                    flex-direction: column-reverse;
-                                    justify-content: center;
-                                    align-items: center;
-                                }
-                                .contenedorMain img {
-                                    width: 100%;
-                                }
-                                .contenedorMain .contenedorTextosMain {
-                                    width: 100%;
-                                    text-align: center;
-                                }
-                                .input {
-                                    padding-bottom: 1rem;
-                                }
-                                .contenedor-cv .col1 .row1 img {
-                                    width: 24rem;
-                                    height: auto;
-                                }
-                            }
-                            
-                            @media screen and (max-width: 470px) {
-                                main {
-                                    width: 90%;
-                                    margin: auto;
-                                }
-                                .textosHeader h1 {
-                                    font-size: 7rem;
-                                    text-align: center;
-                                }
-                                .textosHeader2 h1 {
-                                    font-size: 7rem;
-                                    text-align: center;
-                                }
-                                .contenedorMain {
-                                    width: 90%;
-                                    padding: 0;
-                                    margin: auto;
-                                }
-                                .contenedorMain img {
-                                    width: 100%;
-                                    padding: 0.3rem;
-                                }
-                                .contenedorMain .contenedorTextosMain {
-                                    width: 100%;
-                                    padding: 0.3rem;
-                                    text-align: center;
-                                }
-                                .contenido {
-                                    width: 100%;
-                                }
-                            }
+/* Imports */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "miFuente";
+  src: url(../fuente/Sunday_Morning4.otf);
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+.header {
+  background-image: url(../img/banner.png);
+  width: 100%;
+  height: 60rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+.header .navbar-brand img {
+  width: 24.5rem;
+  height: auto;
+  padding: 1rem 2.4rem;
+  display: flex;
+  justify-content: flex-start;
+}
+.header .bg-light {
+  background: none !important;
+}
+.header .nav-link {
+  font-family: "Montserrat", sans-serif !important;
+  color: #707070 !important;
+  font-size: 1.4rem !important;
+  font-weight: 500 !important;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.098);
+  padding: 1.5rem !important;
+}
+.header .textosHeader2 {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 3.2rem;
+}
+.header .textosHeader2 h1 {
+  font-family: "miFuente";
+  font-size: 14.5rem;
+  -webkit-text-fill-color: #fff;
+  -webkit-text-stroke: 1px;
+}
+.header .textosHeader {
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 3.2rem;
+}
+.header .textosHeader h1 {
+  font-family: "miFuente";
+  font-size: 16rem;
+  -webkit-text-fill-color: #fff;
+  -webkit-text-stroke: 1px;
+}
+.header .textosHeader ul {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #707070;
+  list-style: none;
+  display: flex;
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.098);
+  justify-content: center;
+}
+.header .textosHeader ul li {
+  padding: 2.4rem;
+}
+.header .wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.contenedorMain {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+.contenedorMain img {
+  width: 40%;
+  padding: 1rem;
+}
+.contenedorMain .contenedorTextosMain {
+  width: 48%;
+  padding: 1rem;
+}
+.contenedorMain .contenedorTextosMain h2 {
+  font-family: "miFuente";
+  font-size: 8rem;
+  -webkit-text-fill-color: #fff;
+  -webkit-text-stroke: 1px;
+  text-align: center;
+}
+.contenedorMain .contenedorTextosMain p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #535353;
+  text-align: center;
+  display: block;
+}
+
+.contenedor-cv {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  padding: 4rem;
+  margin: auto;
+  grid-column-gap: 4rem;
+}
+.contenedor-cv .tituloCv {
+  font-family: "miFuente";
+  font-size: 4rem;
+  color: #000;
+  height: 5rem;
+}
+.contenedor-cv ul {
+  list-style: none;
+}
+.contenedor-cv li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #707070;
+}
+.contenedor-cv p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #707070;
+}
+.contenedor-cv .numeros {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #707070;
+}
+.contenedor-cv .row1 img {
+  width: 30rem;
+  height: auto;
+  border-radius: 15%;
+  margin: auto;
+}
+.contenedor-cv .row4 ul {
+  list-style: none;
+  display: flex;
+}
+.contenedor-cv .row4 img {
+  width: 6rem;
+  height: auto;
+}
+.contenedor-cv .col3 .row1 li {
+  width: 14rem;
+}
+.contenedor-cv .col3 .row1 ul {
+  list-style: none;
+  display: grid;
+  grid-template-rows: 1fr 0.2fr 1fr 0.2fr;
+  grid-template-areas: "A B" "a b" "C D" "c d" "E F" "e f";
+}
+.contenedor-cv .col3 .row1 .A {
+  grid-area: A;
+}
+.contenedor-cv .col3 .row1 .a {
+  grid-area: a;
+  text-align: center;
+}
+.contenedor-cv .col3 .row1 .B {
+  grid-area: B;
+}
+.contenedor-cv .col3 .row1 .b {
+  grid-area: b;
+  text-align: center;
+}
+.contenedor-cv .col3 .row1 .C {
+  grid-area: C;
+}
+.contenedor-cv .col3 .row1 .c {
+  grid-area: c;
+  text-align: center;
+}
+.contenedor-cv .col3 .row1 .D {
+  grid-area: D;
+}
+.contenedor-cv .col3 .row1 .d {
+  grid-area: d;
+  text-align: center;
+}
+.contenedor-cv .col3 .row1 .E {
+  grid-area: E;
+}
+.contenedor-cv .col3 .row1 .e {
+  grid-area: e;
+  text-align: center;
+}
+.contenedor-cv .col3 .row1 .F {
+  grid-area: F;
+}
+.contenedor-cv .col3 .row1 .f {
+  grid-area: f;
+  text-align: center;
+}
+.contenedor-cv .col3 .row1 img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  align-items: center;
+}
+
+.cards {
+  max-width: 110rem;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cards .servicio .contenido {
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 10%;
+  border: 1px solid #535353;
+  transition: all 0.3s ease;
+  height: 90%;
+}
+.cards .servicio .contenido .contenido > * {
+  flex: 1 1 100%;
+}
+.cards .servicio .contenido h3 {
+  font-family: "miFuente";
+  font-size: 3.2rem;
+  color: #000;
+  padding-bottom: 1.6rem;
+}
+.cards .servicio .contenido ul {
+  list-style: none;
+}
+.cards .servicio .contenido li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #707070;
+  padding-bottom: 1rem;
+}
+.cards .servicio .contenido :hover {
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+  transform: scale(1.03);
+  cursor: pointer;
+}
+.cards .servicio .contenido img {
+  margin: auto;
+  height: 12rem;
+  width: 12rem;
+}
+
+.contenedor-galeria h3 {
+  font-family: "miFuente";
+  font-size: 3.2rem;
+  color: #000;
+  padding-left: 4rem;
+  margin: 1.2rem;
+}
+.contenedor-galeria img :hover {
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.contenedorForm {
+  padding: 6rem 2rem;
+}
+.contenedorForm .form {
+  width: 85%;
+  margin: auto;
+}
+.contenedorForm .form .inputName {
+  width: 100%;
+  height: 40px;
+  background: #fff;
+  border: 0.1rem solid #707070;
+  border-radius: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #6B6B6B;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.098);
+  padding: 0.8rem 1.6rem;
+}
+.contenedorForm .form .inputText {
+  width: 100%;
+  height: 12rem;
+  background: #fff;
+  border: 0.1rem solid #707070;
+  border-radius: 1.6rem;
+  margin-top: 1.6rem;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #6B6B6B;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.098);
+  padding: 0.8rem 1.6rem;
+}
+.contenedorForm .form .inputBoton {
+  width: 12.8rem;
+  height: 4.8rem;
+  border-radius: 0.8rem;
+  background: linear-gradient(#C5D5EB, #c5ddff);
+  border-color: transparent;
+  display: block;
+  margin-top: 2.4rem;
+  margin-left: auto;
+  margin-right: auto;
+  transform: scale(1);
+  transition: 0.3s;
+}
+.contenedorForm .form .inputBoton :hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.contenedorForm h3 {
+  font-family: "miFuente";
+  font-size: 4rem;
+  color: #000;
+  text-align: center;
+  padding-bottom: 2.4rem;
+}
+
+footer {
+  background-color: #DAE2F1 !important;
+}
+footer .text-white {
+  font-family: "Montserrat", sans-serif !important;
+  color: #707070 !important;
+  font-size: 1rem !important;
+}
+footer .copy {
+  background-color: #c5ddff;
+}
+footer .copy p {
+  font-family: "Montserrat", sans-serif;
+  color: #707070;
+}
+footer .icon {
+  font-family: "Montserrat", sans-serif !important;
+  color: #707070 !important;
+  font-size: 3rem !important;
+}
+
+@media screen and (max-width: 995px) {
+  .contenedorMain {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedorMain img {
+    width: 100%;
+  }
+  .contenedorMain .contenedorTextosMain {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contenedor-cv {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .contenedor-cv .col1 ul {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .textosHeader h1 {
+    font-size: 14rem;
+    text-align: center;
+  }
+
+  .textosHeader2 h1 {
+    font-size: 14rem;
+    text-align: center;
+  }
+
+  .navbar-brand img {
+    width: 17rem;
+    height: auto;
+  }
+
+  .contenedorMain {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedorMain img {
+    width: 100%;
+  }
+  .contenedorMain .contenedorTextosMain {
+    width: 100%;
+    text-align: center;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .servicio {
+    margin: auto;
+  }
+
+  .contenedor-cv {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .contenedor-cv .col1 ul {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 640px) {
+  .header {
+    width: 100%;
+  }
+  .header .textosHeader h1 {
+    font-size: 7.5rem;
+    text-align: center;
+  }
+  .header .textosHeader ul {
+    display: block;
+    font-size: 1.7rem;
+  }
+  .header .textosHeader ul li {
+    padding: 0;
+  }
+  .header .textosHeader2 h1 {
+    font-size: 7.5rem;
+    text-align: center;
+  }
+
+  .contenedorMain {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedorMain img {
+    width: 100%;
+  }
+  .contenedorMain .contenedorTextosMain {
+    width: 100%;
+    text-align: center;
+  }
+
+  .input {
+    padding-bottom: 1rem;
+  }
+
+  .contenedor-cv .col1 .row1 img {
+    width: 24rem;
+    height: auto;
+  }
+}
+@media screen and (max-width: 470px) {
+  main {
+    width: 90%;
+    margin: auto;
+  }
+  main .contenedorMain {
+    width: 90%;
+    padding: 0;
+    margin: auto;
+  }
+  main .contenedorMain img {
+    width: 100%;
+    padding: 0.3rem;
+  }
+  main .contenedorMain .contenedorTextosMain {
+    width: 100%;
+    padding: 0.3rem;
+    text-align: center;
+  }
+
+  .textosHeader h1 {
+    font-size: 6rem;
+    text-align: center;
+  }
+
+  .textosHeader2 h1 {
+    font-size: 6rem;
+    text-align: center;
+  }
+
+  .servicio .contenido {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

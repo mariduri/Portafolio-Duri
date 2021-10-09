@@ -1,0 +1,116 @@
+.contenedor-cv {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 4rem;
+    margin: auto;
+    grid-column-gap: 4rem;
+    .tituloCv {
+        font-family: "miFuente";
+        font-size: 4rem;
+        color: #000;
+        height: 5rem;
+    }
+    ul {
+        list-style: none;
+    }
+    li {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 2rem;
+        text-decoration: none;
+        color: #707070;
+    }
+    p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 2rem;
+        text-decoration: none;
+        color: #707070;
+    }
+    .numeros {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 2rem;
+        text-decoration: none;
+        color: #707070;
+    }
+    .row1 {
+        img {
+            width: 30rem;
+            height: auto;
+            border-radius: 15%;
+            margin: auto;
+        }
+    }
+    .row4 {
+        ul {
+            list-style: none;
+            display: flex;
+        }
+        img {
+            width: 6rem;
+            height: auto;
+        }
+    }
+    .col3 {
+        .row1 {
+            li {
+                width: 14rem;
+            }
+            ul {
+                list-style: none;
+                display: grid;
+                grid-template-rows: 1fr 0.2fr 1fr 0.2fr;
+                grid-template-areas: "A B" "a b" "C D" "c d" "E F" "e f";
+            }
+            .A {
+                grid-area: A;
+            }
+            .a {
+                grid-area: a;
+                text-align: center;
+            }
+            .B {
+                grid-area: B;
+            }
+            .b {
+                grid-area: b;
+                text-align: center;
+            }
+            .C {
+                grid-area: C;
+            }
+            .c {
+                grid-area: c;
+                text-align: center;
+            }
+            .D {
+                grid-area: D;
+            }
+            .d {
+                grid-area: d;
+                text-align: center;
+            }
+            .E {
+                grid-area: E;
+            }
+            .e {
+                grid-area: e;
+                text-align: center;
+            }
+            .F {
+                grid-area: F;
+            }
+            .f {
+                grid-area: f;
+                text-align: center;
+            }
+            img {
+                width: 100%;
+                height: auto;
+                margin: auto;
+                align-items: center;
+            }
+        }
+    }
+}

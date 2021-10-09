@@ -1,0 +1,144 @@
+@media screen and (max-width: 995px) {
+    .contenedorMain {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 100%;
+        }
+        .contenedorTextosMain {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .contenedor-cv {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        .col1 ul {
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .textosHeader h1 {
+        font-size: 14rem;
+        text-align: center;
+    }
+    .textosHeader2 h1 {
+        font-size: 14rem;
+        text-align: center;
+    }
+    .navbar-brand img {
+        width: 17rem;
+        height: auto;
+    }
+    .contenedorMain {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 100%;
+        }
+        .contenedorTextosMain {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .servicio {
+        margin: auto;
+    }
+    .contenedor-cv {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        .col1 ul {
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .header {
+        width: 100%;
+        .textosHeader {
+            h1 {
+                font-size: 7.5rem;
+                text-align: center;
+            }
+            ul {
+                display: block;
+                font-size: 1.7rem;
+                li {
+                    padding: 0
+                }
+            }
+        }
+        .textosHeader2 h1 {
+            font-size: 7.5rem;
+            text-align: center;
+        }
+    }
+    .contenedorMain {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 100%;
+        }
+        .contenedorTextosMain {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .input {
+        padding-bottom: 1rem;
+    }
+    .contenedor-cv .col1 .row1 img {
+        width: 24rem;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    main {
+        width: 90%;
+        margin: auto;
+        .contenedorMain {
+            width: 90%;
+            padding: 0;
+            margin: auto;
+            img {
+                width: 100%;
+                padding: 0.3rem;
+            }
+            .contenedorTextosMain {
+                width: 100%;
+                padding: 0.3rem;
+                text-align: center;
+            }
+        }
+    }
+    .textosHeader h1 {
+        font-size: 6rem;
+        text-align: center;
+    }
+    .textosHeader2 h1 {
+        font-size: 6rem;
+        text-align: center;
+    }
+    .servicio {
+        .contenido {
+            width: 100%;
+        }
+    }
+}

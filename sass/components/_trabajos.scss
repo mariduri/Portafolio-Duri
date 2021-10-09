@@ -1,0 +1,16 @@
+.contenedor-galeria {
+    h3 {
+        font-family: "miFuente";
+        font-size: 3.2rem;
+        color: #000;
+        padding-left: 4rem;
+        margin: 1.2rem;
+    }
+    img {
+         :hover {
+            box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+            transform: scale(1.03);
+            cursor: pointer;
+        }
+    }
+}

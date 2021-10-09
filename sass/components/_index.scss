@@ -1,0 +1,29 @@
+.contenedorMain {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+    img {
+        width: 40%;
+        padding: 1rem;
+    }
+    .contenedorTextosMain {
+        width: 48%;
+        padding: 1rem;
+        h2 {
+            font-family: "miFuente";
+            font-size: 8rem;
+            -webkit-text-fill-color: #fff;
+            -webkit-text-stroke: 1px;
+            text-align: center;
+        }
+        p {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 1.6rem;
+            color: #535353;
+            text-align: center;
+            display: block;
+        }
+    }
+}
