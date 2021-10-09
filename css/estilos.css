@@ -512,6 +512,16 @@
                                     width: 50%;
                                     margin: auto;
                                 }
+                                .contenedor-cv {
+                                    display: flex;
+                                    flex-direction: column;
+                                    text-align: center;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+                                .contenedor-cv .col1 ul {
+                                    justify-content: center;
+                                }
                             }
                             
                             @media screen and (max-width: 640px) {
@@ -548,6 +558,10 @@
                                 }
                                 .input {
                                     padding-bottom: 1rem;
+                                }
+                                .contenedor-cv .col1 .row1 img {
+                                    width: 24rem;
+                                    height: auto;
                                 }
                             }
                             
